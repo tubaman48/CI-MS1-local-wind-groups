@@ -1,0 +1,94 @@
+
+/**************************************************** Heading area */
+
+header {
+    background-color: #98d4a6;
+    color: slategrey;
+}
+
+.logo {
+    background: url("../images/lwg-icon.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 360px;
+    transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+}
+
+.site-name, .site-scope {
+    text-align: center;
+}
+
+.site-name {
+    margin-top: 50px;
+}
+
+.site-scope {
+    margin-top: 20px;
+    margin-bottom: 90px;
+}
+
+.navbar-light .navbar-toggler {
+    color: rgba(0,0,0,.8);
+    border-color: rgba(0,0,0,.2);
+}
+
+/*********************************** Content area */
+
+#purpose-top-margin {
+    margin-top: 15px;
+}
+
+.sub-heading-icon {
+    text-align: right;
+    font-size: 30px;
+}
+
+
+.cat-item {
+    border-radius: 15px;
+    color: #fafafa;
+    width: 70%;
+    height: 150px;
+    max-height: fit-content;
+    float: left;
+    padding: 15% 5%;
+    text-align: center;
+    margin: 2% 10%;
+    font-size: x-large;
+}
+
+.cat-item-bb {
+    background-color: #c7a903;
+}
+
+.cat-item-cb {
+    background-color: #6b7279;
+}
+
+.cat-item-o {
+    background-color: #917070;
+}
+
+.cat-item-ms {
+    background-color: #008000;
+}
+
+.submit-changes-btn {
+    width: 40%;
+    margin: 3% 30%;
+    border-radius: 15px;
+    background-color: slategrey;
+    color: #fafafa;
+    text-align: center;
+}
+
+.submit-changes-btn:hover {
+    color: orange;
+}
+
+.submit-changes-text {
+    padding: 10px 20px;
+}
