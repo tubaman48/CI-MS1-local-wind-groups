@@ -1,79 +1,208 @@
+/************************ --- GLOBAL --- ***************************/
+@import url('https://fonts.googleapis.com/css?family=Lato|Oswald');
 
-/**************************************************** Heading area */
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+body{
+    font-family: Lato;
+    font-weight: 500;
+}
+
+.container-fluid {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+/************************************************** Header section */
 
 header {
     background-color: #98d4a6;
-    color: slategrey;
+    color: #fafafa;
+} 
+
+#hero-outer{
+  height: 450px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
 }
 
-.logo {
-    background: url("../images/lwg-icon.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 360px;
-    transition: all .5s ease-in-out;
-    -moz-transition: all .5s ease-in-out;
-    -webkit-transition: all .5s ease-in-out;
+#hero-image{
+  height: 88%;
+  width: 100%;
+  background: url("../images/logos/lwg-hero-image.png") repeat center center;
+  animation-name: hero-zoom;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes hero-zoom {
+  from{
+    transform: scale(1);
+  }
+  to{
+    transform: scale(1);
+  }
+}
+
+#cover-text h2, #cover-text h3 {
+  color: #ffffff;
+}
+
+#cover-text {
+  font-size: 100%;
+  font-family: Oswald;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+
+  width: 250px;
+  height: 200px;
+
+  padding-top: 10px;
+  padding-left: 10px;
+
+  background-color: rgba(134, 255, 94, 0.7);
+
+  top: 0px;
+  left: 0px;
+
+  position: absolute;
+
 }
 
 .site-name, .site-scope {
     text-align: center;
 }
 
-.site-name {
-    margin-top: 50px;
-}
-
 .site-scope {
     margin-top: 20px;
-    margin-bottom: 90px;
+    margin-bottom: 40px;
 }
 
-.navbar-light .navbar-toggler {
-    color: rgba(0,0,0,.8);
-    border-color: rgba(0,0,0,.2);
+/************************************************* Content section */
+
+.content-section {
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
-/*********************************** Content area */
-
-#purpose-top-margin {
-    margin-top: 15px;
+.purpose-box p {
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .sub-heading-icon {
-    text-align: right;
+    text-align: center;
     font-size: 30px;
 }
 
+.sub-heading-title h2 {
+    text-align: center;
+}
 
 .cat-item {
     border-radius: 15px;
+    border: 3px;
     color: #fafafa;
-    width: 70%;
+    width: 95%;
     height: 150px;
     max-height: fit-content;
     float: left;
     padding: 15% 5%;
     text-align: center;
-    margin: 2% 10%;
+    margin: 2% 3%;
     font-size: x-large;
 }
 
-.cat-item-bb {
+.listing-cat {
+    border-radius: 5px;
+    color: #fafafa;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.detailed-list-top-margin {
+    margin-top: 15px;
+}
+
+.bb-bg-color {
     background-color: #c7a903;
 }
 
-.cat-item-cb {
+.bb-bg-image {
+  height: 100%;
+  width: 95%;
+  background: url("../images/BB-in-action.jpg") repeat center center;
+  background-color: rgba(0,0,0, .6);
+  border-color: #c7a903;
+}
+
+.cb-bg-color {
     background-color: #6b7279;
 }
 
-.cat-item-o {
-    background-color: #917070;
+.cb-bg-image {
+  height: 100%;
+  width: 95%;
+  background: url("../images/CB-in-action.jpg") repeat center center;
+  background-color: rgba(0,0,0, .6);
 }
 
-.cat-item-ms {
+.o-bg-color {
+    background-color: #917070;
+}
+.o-bg-image {
+  height: 100%;
+  width: 95%;
+  background: url("../images/Orch-in-action.png") repeat center center;
+  background-color: rgba(0,0,0, .6);
+}
+
+.ms-bg-color {
     background-color: #008000;
+}
+.ms-bg-image {
+  height: 100%;
+  width: 95%;
+  background: url("../images/MS-in-action.png") repeat center center;
+  background-color: rgba(0,0,0, .6);
+}
+
+.changes-bg-color {
+    background-color: slategrey;
+}
+
+.bb-entry { 
+    padding-top: 15px;
+}
+
+.org-icon-align {
+    text-align: center;
+}
+
+.org-icon-size {
+    max-height: 100px;
+}
+
+.org-name p, .org-email {
+    margin-top :5px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+
+/************************************************** Footer section */
+
+footer {
+    background-color: #98d4a6;
+    color: #fafafa;
+    padding-top: 15px;
+    padding-bottom: 5px;
 }
 
 .submit-changes-btn {
@@ -91,4 +220,63 @@ header {
 
 .submit-changes-text {
     padding: 10px 20px;
+}
+
+/************************************************** Media queries */
+
+
+/* Small devices (landscape phones, up to 768px )        */
+@media (max-width: 768px) { 
+    .org-info-text {
+        font-size: small;
+    } 
+}
+
+/* Medium devices (tablets, 768px and up)                */
+@media (min-width:768px) {
+    .purpose-box p {
+        text-align: center;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    .sub-heading-icon {
+        text-align: right;
+    }
+    .org-info-text {
+        padding-top: 35px;
+        font-size: medium;
+    }
+
+    .org-name p, .org-email {
+        text-align: left;
+    }
+}
+
+/* Large devices (desktops, 992px and up)                */
+@media (min-width: 992px) { 
+    .purpose-box p {
+        text-align: center;
+        padding-left: 150px;
+        padding-right: 150px;
+    }
+
+    .org-info-text {
+        padding-top: 28px;
+        font-size: large;
+    }    
+}
+
+/* Extra large devices (large desktops, 1200px and up)   */
+@media (min-width: 1200px) {
+    .purpose-box p {
+        text-align: center;
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+ 
+    .org-info-text {
+        padding-top: 25px;
+        font-size: x-large;
+    }    
 }

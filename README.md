@@ -24,7 +24,7 @@ The aim of this project is to **grow community involvement and spread awareness*
 > - Acknowledgments
 > - Support
 
-![Image](/assets/images/lwg-mock-up-as-at-2020-12-15.png)
+![Image](/assets/images/lwg-mock-up-as-at-2020-12-21.png)
 
 **Please note: To open any links in this document in a new browser tab, please press `CTRL + Click`.**
 
@@ -134,8 +134,8 @@ I've decided on a colour scheme to reflect each of the four listing categories t
 > 
 > ###### Typography
 >
-> - "Varela Round" font (with fall-back font of Verdana) for main headings. This font was specifically chosen for its rounded edges, which relate to natural curves in nature.
-> - "Cabin" font (with fall-back font of Sans-Serif) for body content.
+> - "Lato" font (with fall-back font of Verdana) for main headings. This font was specifically chosen for the header page title and subtitle.
+> - "Oswald" font (with fall-back font of Sans-Serif) for body content.
 >
 > ###### Images
 >
@@ -267,8 +267,9 @@ This project has been deployed on GitHub Pages with the following process:
 
 > ##### Media
 >
-> - The main photos, logo and imagery used in this project are _to be credited_
-> - About/Trip page images are taken from [Pexels](https://www.pexels.com/), a free stock-photo library.
+> - The main "hero-image" photo used in this project is _owned and provided by myself_
+> - The icons utilised in the **Technology Used** section of the README for this project were obtained from [FontAwesome](https://fontawesome.com/)
+> - The logos used in the Detailed Listings for the different organisations were obtained from the individual organisation websites.
 >
 > ##### Content
 >
@@ -294,7 +295,7 @@ This project has been deployed on GitHub Pages with the following process:
 > I would like to thank:
 >
 > - My mentor, **Antonio Rodrigues**, for his guidance, patience and encouragement throughout this project.
-> - **Bim Williams** and **Simen Daehlin** for their selfless approach to sharing of their time, experience, skill and knowledge. These sessions and casual chats have allowed me to grow my skill immensely in a short period of time.
+> - **Jim Lynx** for his availability to share time, experience, skill and knowledge. These sessions and casual chats have allowed me to grow my skill immensely in a short period of time.
 > - **CI staff** and **Slack Community** for always being on-hand with questions posted and assistance requests.
 > - Everyone that takes part in the Slack calls, specifically from the **#In-It-Together** and **#Study-Group** channels.
 
