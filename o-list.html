@@ -13,11 +13,13 @@
     <title>Welcome to Local Wind Groups Directory</title>
 </head>
 <body>
-    <header class="container-fluid" id="hero-outer">
-        <div id="hero-image"></div>
-        <div id="cover-text">
-            <h2 class="site-name">Local Wind Groups</h2>
-            <h4 class="site-scope">Organisations available in S.E. London, UK</h4>
+    <header class="container-fluid">
+        <div class="row" id="hero-outer">
+            <div id="hero-image"></div> 
+            <div id="cover-text">
+                <h2 class="site-name">Local Wind Groups</h2>
+                <h4 class="site-scope">Organisations available in S.E. London, UK</h4>
+            </div>
         </div>
         
         <!-- NAVIGATION -->
@@ -52,7 +54,7 @@
                         <a class="nav-link ms-bg-color" href="ms-list.html">Music Services</a>
                     </li>
                     <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse">
-                        <a class="nav-link changes-bg-color" href="#changes">Changes</a>
+                        <button class="nav-link nav-changes changes-bg-color" data-toggle="modal" data-target="#submitChangesModal">Changes</button>
                     </li>
                 </ul>
             </div>
@@ -73,7 +75,7 @@
                 <!-- white space -->
             </div>
         </div>
-        <div class="row o-entry">
+        <div class="row org-entry">
             <div class="col-xs-4 col-md-3 org-icon-align">
                 <img src="assets/images/org-logos/BrixCO.png" class="org-icon-size" alt="Brixton Chamber Orchestra logo"/>
             </div>
@@ -88,7 +90,7 @@
                 </div>
             </div>
         </div>
-        <div class="row o-entry">
+        <div class="row org-entry">
             <div class="col-xs-4 col-md-3 org-icon-align">
                 <img src="assets/images/org-logos/BSO.png" class="org-icon-size" alt="Bromley Symphony Orchestra logo"/>
             </div>
@@ -103,7 +105,7 @@
                </div> 
             </div>
         </div>
-        <div class="row o-entry">
+        <div class="row org-entry">
             <div class="col-xs-4 col-md-3 org-icon-align">
                 <img src="assets/images/org-logos/DSO.png" class="org-icon-size" alt="Dartford Symphony Orchestra logo"/>
             </div>
@@ -118,7 +120,7 @@
                </div> 
             </div>
         </div>
-        <div class="row o-entry">
+        <div class="row org-entry">
             <div class="col-xs-4 col-md-3 org-icon-align">
                 <img src="assets/images/org-logos/LO.png" class="org-icon-size" alt="Lambeth Orchestra logo"/>
             </div>
@@ -133,7 +135,7 @@
                </div> 
             </div>
         </div>
-        <div class="row o-entry">
+        <div class="row org-entry">
             <div class="col-xs-4 col-md-3 org-icon-align">
                 <img src="assets/images/org-logos/OSO.png" class="org-icon-size" alt="Orpington Symphony Orchestra logo"/>
             </div>
@@ -148,7 +150,7 @@
                </div> 
             </div>
         </div>
-        <div class="row o-entry">
+        <div class="row org-entry">
             <div class="col-xs-4 col-md-3 org-icon-align">
                 <img src="assets/images/org-logos/SSO.png" class="org-icon-size" alt="Sidcup Symphony Orchestra logo"/>
             </div>
@@ -163,7 +165,7 @@
                </div> 
             </div>
         </div>
-        <div class="row o-entry">
+        <div class="row org-entry">
             <div class="col-xs-4 col-md-3 org-icon-align">
                 <img src="assets/images/org-logos/SELO.png" class="org-icon-size" alt="South East London Orchestra logo"/>
             </div>
@@ -195,10 +197,100 @@
         </div>
         <div class="row submit-changes-btn">
             <div class="col-12 submit-changes-text">
-                <h3>Submit changes here</h3>
-                <h4>(via a pop up form)</h4>
+                <button class="btn btn-lg btn-success" data-toggle="modal" data-target="#submitChangesModal">
+                    <h3>Submit changes here</h3>
+                    <h4>(via a pop up form)</h4>
+                </button>
             </div>
         </div>
+
+        <div class="modal" tabindex="-1" role="dialog" id="submitChangesModal">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="modal-title"><em class="fas fa-wrench"></em> Proposed maintenance</h2>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="https://formdump.codeinstitute.net/" method="POST">
+                            <fieldset>
+                                <legend>Type of Maintenance</legend>
+                                <div class="form-group">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-4 tom-align">
+                                                <label for="maint-type-add">Add</label><br>
+                                                <input value="maint-type-add" id="maint-type-add" type="radio" name="maint-type" checked="checked">
+                                            </div>
+                                            <div class="col-4 tom-align">
+                                                <label for="maint-type-chg">Amend</label><br>
+                                                <input value="maint-type-chg" id="maint-type-chg" type="radio" name="maint-type">
+                                            </div>
+                                            <div class="col-4 tom-align">
+                                                <label for="maint-type-del">Delete</label><br>
+                                                <input value="maint-type-del" id="maint-type-del" type="radio" name="maint-type">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <fieldset>
+                                <legend>Listing Category</legend>
+                                <div class="form-group">
+                                    <label for="listing-category">Pick the most suitable category</label>
+                                    <select class="drop-down-box" name="list-of-categories" id="listing-category">
+                                        <option value="bb">Brass Band</option>
+                                        <option value="cb">Concert Band</option>
+                                        <option value="bb">Orchestra</option>
+                                        <option value="ms">Music Service</option>
+                                    </select>
+                                </div>
+                            </fieldset>
+                            <fieldset>
+                                <legend>Organisation details</legend>
+                                <div class="form-group">
+                                    <label for="gTitle" class="label-margin-bottom">Group title</label><br>
+                                    <input type="text" class="form-control" id="gTitle" name="group_title" required
+                                        placeholder="Title of group">
+                                </div>
+                                <div class="form-group">
+                                    <label for="contactEmail" class="label-margin-bottom">Contact email</label><br>
+                                    <input type="email" class="form-control" id="contactEmail" aria-describedby="contactEmailHelp" 
+                                        placeholder="Valid contact email for group">
+                                    <small id="contactEmailHelp" class="form-text text-muted">We'll only use this email on the displayed entry.</small>
+                                </div>
+                                <div class="form-group">
+                                    <label for="gIcon" class="label-margin-bottom">Group icon</label><br>
+                                    <input type="url" class="form-control" id="gIcon" name="group_icon" required
+                                        placeholder="Provide URL here of logo for group">
+                                </div>
+                            </fieldset>
+                            <fieldset>
+                                <legend>Submitter Contact details</legend>
+                                <div class="form-group">
+                                    <label for="fname" class="label-margin-bottom">First Name</label><br>
+                                    <input class="form-control text-input-half-width" id="fname" type="text" name="first_name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="lname" class="label-margin-bottom">Last Name</label><br>
+                                    <input class="form-control text-input-half-width" id="lname" type="text" name="last_name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="submitterEmail" class="label-margin-bottom">Email address</label><br>
+                                    <input type="email" class="form-control" id="submitterEmail" aria-describedby="submitterEmailHelp" 
+                                        placeholder="Enter email">
+                                    <small id="submitterEmailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                                </div>
+                            </fieldset>
+                            <button type="submit" class="btn btn-success">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+         
     </footer> 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>

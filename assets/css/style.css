@@ -29,10 +29,11 @@ header {
   width: 100%;
   overflow: hidden;
   position: relative;
+  margin: 0px;
 }
 
 #hero-image{
-  height: 88%;
+  height: 100%;
   width: 100%;
   background: url("../images/logos/lwg-hero-image.png") repeat center center;
   animation-name: hero-zoom;
@@ -42,7 +43,7 @@ header {
 
 @keyframes hero-zoom {
   from{
-    transform: scale(1);
+    transform: scale(1.2);
   }
   to{
     transform: scale(1);
@@ -83,6 +84,11 @@ header {
     margin-bottom: 40px;
 }
 
+.nav-changes {
+    width: 100%;
+    text-align: left;
+}
+
 /************************************************* Content section */
 
 .content-section {
@@ -119,6 +125,9 @@ header {
     font-size: x-large;
 }
 
+/* --------------- Detailed List pages subheading formatting */
+/*     (for HTML files bb-list, cb-list, o-list and ms-list) */
+
 .listing-cat {
     border-radius: 5px;
     color: #fafafa;
@@ -126,58 +135,9 @@ header {
     padding-right: 5px;
 }
 
-.detailed-list-top-margin {
-    margin-top: 15px;
-}
+/* --------------- Detailed organisation entries - padding and text alignment */
 
-.bb-bg-color {
-    background-color: #c7a903;
-}
-
-.bb-bg-image {
-  height: 100%;
-  width: 95%;
-  background: url("../images/BB-in-action.jpg") repeat center center;
-  background-color: rgba(0,0,0, .6);
-  border-color: #c7a903;
-}
-
-.cb-bg-color {
-    background-color: #6b7279;
-}
-
-.cb-bg-image {
-  height: 100%;
-  width: 95%;
-  background: url("../images/CB-in-action.jpg") repeat center center;
-  background-color: rgba(0,0,0, .6);
-}
-
-.o-bg-color {
-    background-color: #917070;
-}
-.o-bg-image {
-  height: 100%;
-  width: 95%;
-  background: url("../images/Orch-in-action.png") repeat center center;
-  background-color: rgba(0,0,0, .6);
-}
-
-.ms-bg-color {
-    background-color: #008000;
-}
-.ms-bg-image {
-  height: 100%;
-  width: 95%;
-  background: url("../images/MS-in-action.png") repeat center center;
-  background-color: rgba(0,0,0, .6);
-}
-
-.changes-bg-color {
-    background-color: slategrey;
-}
-
-.bb-entry { 
+.org-entry {
     padding-top: 15px;
 }
 
@@ -195,6 +155,65 @@ header {
     text-align: center;
 }
 
+/* --------------- Colours and images defining the four listing categories */
+
+.bb-bg-color {
+    background-color: #c7a903;
+}
+
+.bb-bg-image {
+    height: 100%;
+    width: 95%;
+    background: url("../images/BB-in-action.jpg") repeat center center;
+}
+
+.bb-bg-image:hover {
+    background: #c7a903 repeat center center;
+}
+
+.cb-bg-color {
+    background-color: #6b7279;
+}
+
+.cb-bg-image {
+    height: 100%;
+    width: 95%;
+    background: url("../images/CB-in-action.jpg") repeat center center;
+}
+
+.cb-bg-image:hover {
+    background: #6b7279 repeat center center;
+}
+
+.o-bg-color {
+    background-color: #917070;
+}
+.o-bg-image {
+    height: 100%;
+    width: 95%;
+    background: url("../images/Orch-in-action.png") repeat center center;
+}
+
+.o-bg-image:hover {
+    background: #917070 repeat center center;
+}
+
+.ms-bg-color {
+    background-color: #008000;
+}
+.ms-bg-image {
+    height: 100%;
+    width: 95%;
+    background: url("../images/MS-in-action.png") repeat center center;
+}
+
+.ms-bg-image:hover {
+    background: #008000 repeat center center;
+}
+
+.changes-bg-color {
+    background-color: slategrey;
+}
 
 /************************************************** Footer section */
 
@@ -220,6 +239,65 @@ footer {
 
 .submit-changes-text {
     padding: 10px 20px;
+}
+
+/* ---------------- Modal box formatting */
+
+.modal-header {
+    text-align: center;
+}
+
+.modal-content {
+    background-color: #98d4a6;
+}
+
+fieldset {
+    display: block;
+    margin-inline-start: 2px;
+    margin-inline-end: 2px;
+    padding-block-start: 0.35em;
+    padding-inline-start: 0.75em;
+    padding-inline-end: 0.75em;
+    padding-block-end: 0.625em;
+    border-width: 2px;
+    border-style: groove;
+    border-color: darkgreen;
+    border-image: initial;
+    margin-bottom: 0.5rem;
+}
+
+legend {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: max-content;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+.form-group {
+    margin-bottom: 0.5rem;
+}
+
+.label-margin-bottom {
+    margin-bottom: 0.1rem;
+}
+
+.text-input-half-width {
+    width: 50%;
+}
+
+.form-control {
+    height: calc(1em + .75rem + 2px);
+}
+
+.tom-align {
+    text-align: center;
+}
+
+.drop-down-box {
+    width: 45%;
+    text-align: center;
+    margin-left: 10px;
 }
 
 /************************************************** Media queries */
