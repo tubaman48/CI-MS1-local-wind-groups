@@ -23,6 +23,7 @@
         </div>
         
         <!-- NAVIGATION -->
+        <!-- CREDIT - based on Bootstrap navbar template -->
         <nav id="main-nav" class="navbar navbar-expand-lg navbar-dark sticky-top">
             <button
                 class="navbar-toggler"
@@ -37,7 +38,6 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                <!--- CREDIT - Code solution to closing hamburger menu once menu item clicked from Orel Eliyahu' on Stack Overflow - https://stackoverflow.com/questions/36405991/bootstrap-toggle-menu-on-one-page-site-does-not-uncollapse-when-clicked --->
                     <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse">
                         <a class="nav-link" href="index.html">Home</a>
                     </li>
@@ -238,13 +238,20 @@
         <div class="row">
             <div class="col-12">
                 <button class="submit-changes-btn submit-changes-text btn btn-success" data-toggle="modal" data-target="#submitChangesModal">
-                    <h3>Submit changes here</h3>
-                    <h4>(via a pop up form)</h4>
+                    <!-- validator.w3.org HTML Validation fixes                                                                                        -->
+                    <!-- 1) Originally used h3 tag for title which gave error "Element h3 not allowed as child of element button in this context".     -->
+                    <!--    Fixed by replacing h3 tag with div tag of class submit-button-title, where equivalent font-size of 1.75rem set.            -->
+                    <!-- 2) Originally used h4 tag for sub-title which gave error "Element h4 not allowed as child of element button in this context". -->
+                    <!--    Fixed by replacing h4 tag with div tag of class submit-button-subtitle, where equivalent font-size of 1.5rem set.          -->
+                    <div class="submit-button-title">Submit changes here</div>
+                    <div class="submit-button-subtitle">(via a pop up form)</div>
                 </button>
             </div>
         </div>
 
         <!-- Social media icons and Copyright -->
+        <!-- CREDIT - format of social network icons and location of Font Awesome icons taken from my version of Love Running exercise in CI LMS -->
+        <!--          https://repl.it/@tubaman48/Love-Running#index.html                                                                         -->
         <div class="row">
             <div class="col-3 social-network">
                 <a href="https://www.facebook.com" target="_blank"><em class="fab fa-facebook"></em> </a>
@@ -265,7 +272,8 @@
             </div>
         </div>
     
-        <!-- Modal pop-up form for Proposed Maintenace -->
+        <!-- Modal pop-up form for Proposed Maintenance -->
+        <!-- CREDIT - modal outline taken from example used in CI LMS "Whiskey Drop" exercise -->
         <div class="modal" tabindex="-1" role="dialog" id="submitChangesModal">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">

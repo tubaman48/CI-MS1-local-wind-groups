@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 /************************ --- GLOBAL --- ***************************/
 @import url('https://fonts.googleapis.com/css?family=Lato|Oswald');
 
@@ -36,17 +43,33 @@ header {
   height: 100%;
   width: 100%;
   background: url("../images/logos/lwg-hero-image.png") repeat center center;
-  animation-name: hero-zoom;
-  animation-duration: 5s;
-  animation-fill-mode: forwards;
+  -webkit-animation-name: hero-zoom;
+          animation-name: hero-zoom;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes hero-zoom {
+  from{
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  to{
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
 }
 
 @keyframes hero-zoom {
   from{
-    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
   }
   to{
-    transform: scale(1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 
@@ -117,6 +140,8 @@ header {
     color: #fafafa;
     width: 95%;
     height: 150px;
+    max-height: -webkit-fit-content;
+    max-height: -moz-fit-content;
     max-height: fit-content;
     float: left;
     padding: 15% 5%;
@@ -224,6 +249,14 @@ footer {
     padding-bottom: 5px;
 }
 
+.submit-button-title {
+    font-size: 1.75rem;
+}
+
+.submit-button-subtitle {
+    font-size: 1.5rem;
+}
+
 .submit-changes-btn {
     width: 70%;
     margin: 3% 15%;
@@ -276,22 +309,31 @@ footer {
 
 fieldset {
     display: block;
-    margin-inline-start: 2px;
-    margin-inline-end: 2px;
-    padding-block-start: 0.35em;
-    padding-inline-start: 0.75em;
-    padding-inline-end: 0.75em;
-    padding-block-end: 0.625em;
+    -webkit-margin-start: 2px;
+            margin-inline-start: 2px;
+    -webkit-margin-end: 2px;
+            margin-inline-end: 2px;
+    -webkit-padding-before: 0.35em;
+            padding-block-start: 0.35em;
+    -webkit-padding-start: 0.75em;
+            padding-inline-start: 0.75em;
+    -webkit-padding-end: 0.75em;
+            padding-inline-end: 0.75em;
+    -webkit-padding-after: 0.625em;
+            padding-block-end: 0.625em;
     border-width: 2px;
     border-style: groove;
     border-color: darkgreen;
-    border-image: initial;
+    -o-border-image: initial;
+       border-image: initial;
     margin-bottom: 0.5rem;
 }
 
 legend {
     padding-left: 5px;
     padding-right: 5px;
+    width: -webkit-max-content;
+    width: -moz-max-content;
     width: max-content;
     text-align: center;
     margin-bottom: 0px;
