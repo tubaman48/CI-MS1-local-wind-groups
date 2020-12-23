@@ -2,7 +2,7 @@
 
 # [Local Wind Groups](https://tubaman48.github.io/CI-MS1-local-wind-groups)
 
-![Image](/assets/images/lwg-icon.jpg)
+![Image](/assets/images/logos/lwg-icon.png)
 
 The aim of this project is to **grow community involvement and spread awareness** of brass bands, concert bands, orchestras and music services that are available in South East London.
 
@@ -253,8 +253,8 @@ I've decided on a colour scheme to reflect each of the four listing categories t
 This project has been deployed on GitHub Pages with the following process:
 
 > - All code was written on Gitpod, an online IDE.
-> - The code was then pushed to GitHub where it is stored in my [Repository](https://github.com/JimLynx/CI-MS1-Explore-Ireland).
-> - Under the [settings](https://github.com/JimLynx/CI-MS1-Explore-Ireland/settings) section of the GitHub repository, scrolled down to GitHub Pages section.
+> - The code was then pushed to GitHub where it is stored in my [Repository](https://github.com/tubaman48/CI-MS1-local-wind-groups).
+> - Under the [settings](https://github.com/tubaman48/CI-MS1-local-wind-groups/settings) section of the GitHub repository, scrolled down to GitHub Pages section.
 > - Under 'Source' drop-down, the 'Master branch' was selected.
 > - Once selected, this publishes the project to GitHub Pages and displays the site url.
 > - There is no difference between the deployed version and the development version.
@@ -283,8 +283,6 @@ This project has been deployed on GitHub Pages with the following process:
 >
 > - [CSS-Tricks](https://css-tricks.com/snippets/css/transparent-background-images/) - Background image opacity on Contact page.
 > - [Code Institute](https://codeinstitute.net/) - Inspiration for contact form from 'Love Running' Mini-Project in CSS Module.
-> - [Shuva Mallick](https://jsfiddle.net/shuvamallick/3o0h5oka/) - Inspiration code for Submit button colour slide effect.
-> - ['djibe' on Stack Overflow](https://stackoverflow.com/questions/35868756/how-to-make-bootstrap-4-cards-the-same-height-in-card-columns) - Code idea for cards inside Jumbotron.
 > - [W3.org](https://www.w3.org/2005/10/howto-favicon) - How to add a Favicon to site.
 > - [Orel Eliyahu' on Stack Overflow](https://stackoverflow.com/questions/36405991/bootstrap-toggle-menu-on-one-page-site-does-not-uncollapse-when-clicked) for the code solution to closing hamburger menu once menu item clicked.
 

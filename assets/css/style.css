@@ -149,7 +149,7 @@ header {
     max-height: 100px;
 }
 
-.org-name p, .org-email {
+.org-name p, .org-website, .org-email {
     margin-top :5px;
     margin-bottom: 0px;
     text-align: center;
@@ -225,8 +225,8 @@ footer {
 }
 
 .submit-changes-btn {
-    width: 40%;
-    margin: 3% 30%;
+    width: 70%;
+    margin: 3% 15%;
     border-radius: 15px;
     background-color: slategrey;
     color: #fafafa;
@@ -241,9 +241,32 @@ footer {
     padding: 10px 20px;
 }
 
+/*----------------- Copyright entry */
+.copyright {
+	margin: auto 8px;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.copyright em {
+	margin-right: 5px;
+}
+
+/* ---------------- Social Network entries */
+.social-network{
+  text-align: center;
+}
+
+.social-network em{
+  font-size: 160%;
+  margin: 1%;
+  padding: 5%;
+  color: #777777;
+}
+
 /* ---------------- Modal box formatting */
 
-.modal-header {
+.modal-title {
     text-align: center;
 }
 
@@ -282,10 +305,6 @@ legend {
     margin-bottom: 0.1rem;
 }
 
-.text-input-half-width {
-    width: 50%;
-}
-
 .form-control {
     height: calc(1em + .75rem + 2px);
 }
@@ -298,6 +317,10 @@ legend {
     width: 45%;
     text-align: center;
     margin-left: 10px;
+}
+
+.name-align {
+    text-align: center;
 }
 
 /************************************************** Media queries */
@@ -326,8 +349,13 @@ legend {
         font-size: medium;
     }
 
-    .org-name p, .org-email {
+    .org-name p, .org-website, .org-email {
         text-align: left;
+    }
+
+    .submit-changes-btn {
+        width: 40%;
+        margin: 3% 30%;
     }
 }
 
