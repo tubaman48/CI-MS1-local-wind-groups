@@ -48,13 +48,13 @@
                         <a class="nav-link cb-bg-color" href="cb-list.html">Concert Bands</a>
                     </li>
                     <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse">
-                        <a class="nav-link o-bg-color" href="o-list.html">Orchestras</a>
+                        <a class="nav-link o-bg-color active" aria-current="page" href="o-list.html">Orchestras</a>
                     </li>
                     <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse">
                         <a class="nav-link ms-bg-color" href="ms-list.html">Music Services</a>
                     </li>
                     <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse">
-                        <button class="nav-link nav-changes changes-bg-color" data-toggle="modal" data-target="#submitChangesModal">Changes</button>
+                        <a class="nav-link changes-bg-color" href="changes.html">Changes</a>
                     </li>
                 </ul>
             </div>
@@ -200,36 +200,10 @@
                     </div>
                </div> 
             </div>
-        </div>
-        
+        </div>        
     </section>
-    <footer>
-        <!-- Add / Amend / Delete Entries subsection -->
-        <div class="row">
-            <div class="col-12 col-sm-2 sub-heading-icon">
-                <em class="fas fa-wrench"></em>
-            </div>
-            <div class="col-12 col-sm-8 sub-heading-title">
-                <h2 class="section-heading">Add / Amend / Delete Entries</h2>
-            </div>
-            <div class="col-12 col-sm-2">
-                <!-- white space -->
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12">
-                <button class="submit-changes-btn submit-changes-text btn btn-success" data-toggle="modal" data-target="#submitChangesModal">
-                    <!-- validator.w3.org HTML Validation fixes                                                                                        -->
-                    <!-- 1) Originally used h3 tag for title which gave error "Element h3 not allowed as child of element button in this context".     -->
-                    <!--    Fixed by replacing h3 tag with div tag of class submit-button-title, where equivalent font-size of 1.75rem set.            -->
-                    <!-- 2) Originally used h4 tag for sub-title which gave error "Element h4 not allowed as child of element button in this context". -->
-                    <!--    Fixed by replacing h4 tag with div tag of class submit-button-subtitle, where equivalent font-size of 1.5rem set.          -->
-                    <div class="submit-button-title">Submit changes here</div>
-                    <div class="submit-button-subtitle">(via a pop up form)</div>
-                </button>
-            </div>
-        </div>
 
+    <footer>
         <!-- Social media icons and Copyright -->
         <!-- CREDIT - format of social network icons and location of Font Awesome icons taken from my version of Love Running exercise in CI LMS -->
         <!--          https://repl.it/@tubaman48/Love-Running#index.html                                                                         -->
@@ -251,102 +225,9 @@
             <div class="col copyright">
                 <em class="far fa-copyright"></em>2020 Richard Lovett (tubaman48)
             </div>
-        </div>
-    
-        <!-- Modal pop-up form for Proposed Maintenance -->
-        <!-- CREDIT - modal outline taken from example used in CI LMS "Whiskey Drop" exercise -->       
-        <div class="modal" tabindex="-1" role="dialog" id="submitChangesModal">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h2 class="modal-title"><em class="fas fa-wrench"></em> Proposed maintenance</h2>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <form action="https://formdump.codeinstitute.net/" method="POST">
-                            <fieldset>
-                                <legend>Type of Maintenance</legend>
-                                <div class="form-group">
-                                    <div class="container">
-                                        <div class="row">
-                                            <div class="col-4 tom-align">
-                                                <label for="maint-type-add">Add</label><br>
-                                                <input value="maint-type-add" id="maint-type-add" type="radio" name="maint-type" checked="checked">
-                                            </div>
-                                            <div class="col-4 tom-align">
-                                                <label for="maint-type-chg">Amend</label><br>
-                                                <input value="maint-type-chg" id="maint-type-chg" type="radio" name="maint-type">
-                                            </div>
-                                            <div class="col-4 tom-align">
-                                                <label for="maint-type-del">Delete</label><br>
-                                                <input value="maint-type-del" id="maint-type-del" type="radio" name="maint-type">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </fieldset>
-                            <fieldset>
-                                <legend>Listing Category</legend>
-                                <div class="form-group">
-                                    <label for="listing-category">Pick the most suitable category</label>
-                                    <select class="drop-down-box" name="list-of-categories" id="listing-category">
-                                        <option value="bb">Brass Band</option>
-                                        <option value="cb">Concert Band</option>
-                                        <option value="bb">Orchestra</option>
-                                        <option value="ms">Music Service</option>
-                                    </select>
-                                </div>
-                            </fieldset>
-                            <fieldset>
-                                <legend>Organisation details</legend>
-                                <div class="form-group">
-                                    <label for="gTitle" class="label-margin-bottom">Group title</label><br>
-                                    <input type="text" class="form-control" id="gTitle" name="group_title" required
-                                        placeholder="Title of group">
-                                </div>
-                                <div class="form-group">
-                                    <label for="contactEmail" class="label-margin-bottom">Contact email</label><br>
-                                    <input type="email" class="form-control" id="contactEmail" aria-describedby="contactEmailHelp" 
-                                        placeholder="Valid contact email for group">
-                                    <small id="contactEmailHelp" class="form-text text-muted">We'll only use this email on the displayed entry.</small>
-                                </div>
-                                <div class="form-group">
-                                    <label for="gIcon" class="label-margin-bottom">Group icon</label><br>
-                                    <input type="url" class="form-control" id="gIcon" name="group_icon" required
-                                        placeholder="Provide URL here of logo for group">
-                                </div>
-                            </fieldset>
-                            <fieldset>
-                                <legend>Submitter Contact details</legend>
-                                <div class="container form-group">
-                                    <div class="row">
-                                        <div class="col-xs-12 col-md-6 name-align">
-                                            <label for="fname" class="label-margin-bottom">First Name</label><br>
-                                            <input class="form-control" id="fname" type="text" name="first_name" required>
-                                        </div>
-                                        <div class="col-xs-12 col-md-6 name-align">
-                                            <label for="lname" class="label-margin-bottom">Last Name</label><br>
-                                            <input class="form-control" id="lname" type="text" name="last_name" required>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="submitterEmail" class="label-margin-bottom">Email address</label><br>
-                                    <input type="email" class="form-control" id="submitterEmail" aria-describedby="submitterEmailHelp" 
-                                        placeholder="Enter email">
-                                    <small id="submitterEmailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-                                </div>
-                            </fieldset>
-                            <button type="submit" class="btn btn-success">Submit</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-         
+        </div>         
     </footer> 
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/js/bootstrap.min.js"></script>

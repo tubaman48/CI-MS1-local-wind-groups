@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/jpeg"
+        href="/assets/images/logos/lwg-icon.png" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Welcome to Local Wind Groups Directory</title>
+</head>
+<body>
+    <header class="container-fluid">
+        <div class="row" id="hero-outer">
+            <div id="hero-image"></div> 
+            <div id="cover-text">
+                <h2 class="site-name">Local Wind Groups</h2>
+                <h4 class="site-scope">Organisations available in S.E. London, UK</h4>
+            </div>
+        </div>
+
+        <!-- NAVIGATION -->
+        <!-- CREDIT - based on Bootstrap navbar template -->        
+        <nav id="main-nav" class="navbar navbar-expand-lg navbar-dark sticky-top">
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+                >
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse">
+                        <a class="nav-link bb-bg-color" href="bb-list.html">Brass Bands</a>
+                    </li>
+                    <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse">
+                        <a class="nav-link cb-bg-color" href="cb-list.html">Concert Bands</a>
+                    </li>
+                    <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse">
+                        <a class="nav-link o-bg-color" href="o-list.html">Orchestras</a>
+                    </li>
+                    <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse">
+                        <a class="nav-link ms-bg-color" href="ms-list.html">Music Services</a>
+                    </li>
+                    <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse">
+                        <a class="nav-link changes-bg-color active" aria-current="page" href="changes.html">Changes</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+
+<!-- CHANGES PAGE -->
+    <section class="container-fluid content-section">
+
+        <div class="row">
+            <div class="col-1 col-md-2 col-lg-3 white-space"></div>
+            <div class="col-10 col-md-8 col-lg-6 form-section">
+                <!-- Proposed Maintenance Form -->
+                <div class="row">
+                    <div class="col-2 sub-heading-icon">
+                        <em class="far fa-wrench"></em>
+                    </div>
+                    <div class="col-8 sub-heading-title">
+                        <h2 class="section-heading">Proposed Maintenance</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="form-content">
+                            <form action="https://formdump.codeinstitute.net/" method="POST">
+                                    <fieldset>
+                                        <legend>Type of Maintenance</legend>
+                                        <div class="form-group">
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-4 tom-align">
+                                                        <label for="maint-type-add">Add</label><br>
+                                                        <input value="maint-type-add" id="maint-type-add" type="radio" name="maint-type" checked="checked">
+                                                    </div>
+                                                    <div class="col-4 tom-align">
+                                                        <label for="maint-type-chg">Amend</label><br>
+                                                        <input value="maint-type-chg" id="maint-type-chg" type="radio" name="maint-type">
+                                                    </div>
+                                                    <div class="col-4 tom-align">
+                                                        <label for="maint-type-del">Delete</label><br>
+                                                        <input value="maint-type-del" id="maint-type-del" type="radio" name="maint-type">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                    <fieldset>
+                                        <legend>Listing Category</legend>
+                                        <div class="form-group">
+                                            <label for="listing-category">Pick the most suitable category</label>
+                                            <select class="drop-down-box" name="list-of-categories" id="listing-category">
+                                                <option value="bb">Brass Band</option>
+                                                <option value="cb">Concert Band</option>
+                                                <option value="bb">Orchestra</option>
+                                                <option value="ms">Music Service</option>
+                                            </select>
+                                        </div>
+                                    </fieldset>
+                                    <fieldset>
+                                        <legend>Organisation details</legend>
+                                        <div class="form-group">
+                                            <label for="gTitle" class="label-margin-bottom">Group title</label><br>
+                                            <input type="text" class="form-control" id="gTitle" name="group_title" required
+                                                placeholder="Title of group">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="contactEmail" class="label-margin-bottom">Contact email</label><br>
+                                            <input type="email" class="form-control" id="contactEmail" aria-describedby="contactEmailHelp" 
+                                                placeholder="Valid contact email for group">
+                                            <small id="contactEmailHelp" class="form-text text-muted">We'll only use this email on the displayed entry.</small>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="gIcon" class="label-margin-bottom">Group icon</label><br>
+                                            <input type="url" class="form-control" id="gIcon" name="group_icon" required
+                                                placeholder="Provide URL here of logo for group">
+                                        </div>
+                                    </fieldset>
+                                    <fieldset>
+                                        <legend>Submitter Contact details</legend>
+                                        <div class="container form-group">
+                                            <div class="row">
+                                                <div class="col-xs-12 col-md-6 name-align">
+                                                    <label for="fname" class="label-margin-bottom">First Name</label><br>
+                                                    <input class="form-control" id="fname" type="text" name="first_name" required>
+                                                </div>
+                                                <div class="col-xs-12 col-md-6 name-align">
+                                                    <label for="lname" class="label-margin-bottom">Last Name</label><br>
+                                                    <input class="form-control" id="lname" type="text" name="last_name" required>
+                                                </div>
+                                            </div>
+                                        </div> 
+                                        <div class="form-group">
+                                            <label for="submitterEmail" class="label-margin-bottom">Email address</label><br>
+                                            <input type="email" class="form-control" id="submitterEmail" aria-describedby="submitterEmailHelp" 
+                                                placeholder="Enter email">
+                                            <small id="submitterEmailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                                        </div>
+                                    </fieldset>
+                                    <button type="submit" class="btn btn-success">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-1 col-md-2 col-lg-3 white-space"></div>
+        </div>
+
+    </section>
+
+    <footer>
+        <!-- Social media icons and Copyright -->
+        <!-- CREDIT - format of social network icons and location of Font Awesome icons taken from my version of Love Running exercise in CI LMS -->
+        <!--          https://repl.it/@tubaman48/Love-Running#index.html                                                                         -->
+        <div class="row">
+            <div class="col-3 social-network">
+                <a href="https://www.facebook.com" target="_blank"><em class="fab fa-facebook"></em> </a>
+            </div>
+            <div class="col-3 social-network">
+                <a href="https://www.twitter.com" target="_blank"><em class="fab fa-twitter-square"></em> </a>
+            </div>
+            <div class="col-3 social-network">
+                <a href="https://www.youtube.com" target="_blank"><em class="fab fa-youtube-square"></em> </a>
+            </div>
+            <div class="col-3 social-network">
+                <a href="https://www.instagram.com" target="_blank"><em class="fab fa-instagram"></em> </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col copyright">
+                <em class="far fa-copyright"></em>2020 Richard Lovett (tubaman48)
+            </div>
+        </div>      
+    </footer> 
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/js/bootstrap.min.js"></script>
+</body>
+</html>

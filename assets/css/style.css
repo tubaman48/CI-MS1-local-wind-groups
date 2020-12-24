@@ -45,8 +45,8 @@ header {
   background: url("../images/logos/lwg-hero-image.png") repeat center center;
   -webkit-animation-name: hero-zoom;
           animation-name: hero-zoom;
-  -webkit-animation-duration: 5s;
-          animation-duration: 5s;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
@@ -107,16 +107,23 @@ header {
     margin-bottom: 40px;
 }
 
-.nav-changes {
-    width: 100%;
-    text-align: left;
+.nav-item {
+    width: 120px;
+    text-align: center;
 }
 
 /************************************************* Content section */
 
 .content-section {
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.section-heading {
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .purpose-box p {
@@ -129,6 +136,12 @@ header {
     text-align: center;
     font-size: 30px;
 }
+
+.form-section em {
+    background-color: #98d4a6;
+    color:  #fafafa;
+}
+
 
 .sub-heading-title h2 {
     text-align: center;
@@ -240,6 +253,84 @@ header {
     background-color: slategrey;
 }
 
+/* ---------------- Changes Page - Form formatting */
+
+.white-space {
+    height: 15px;
+}
+
+.form-section {
+    background-color: #98d4a6;
+    color: #fafafa;
+}
+
+.form-title {
+    text-align: center;
+}
+
+.form-content {
+    background-color: #98d4a6;
+    margin-bottom: 10px;
+}
+
+fieldset {
+    display: block;
+    -webkit-margin-start: 2px;
+            margin-inline-start: 2px;
+    -webkit-margin-end: 2px;
+            margin-inline-end: 2px;
+    -webkit-padding-before: 0.35em;
+            padding-block-start: 0.35em;
+    -webkit-padding-start: 0.75em;
+            padding-inline-start: 0.75em;
+    -webkit-padding-end: 0.75em;
+            padding-inline-end: 0.75em;
+    -webkit-padding-after: 0.625em;
+            padding-block-end: 0.625em;
+    border-width: 2px;
+    border-style: groove;
+    border-color: darkgreen;
+    -o-border-image: initial;
+       border-image: initial;
+    margin-bottom: 0.5rem;
+}
+
+legend {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+.form-group {
+    margin-bottom: 0.5rem;
+}
+
+.label-margin-bottom {
+    margin-bottom: 0.1rem;
+}
+
+.form-control {
+    height: calc(1em + .75rem + 2px);
+}
+
+.tom-align {
+    text-align: center;
+}
+
+.drop-down-box {
+    width: 45%;
+    text-align: center;
+    margin-left: 10px;
+}
+
+.name-align {
+    text-align: center;
+}
+
 /************************************************** Footer section */
 
 footer {
@@ -307,64 +398,6 @@ footer {
     background-color: #98d4a6;
 }
 
-fieldset {
-    display: block;
-    -webkit-margin-start: 2px;
-            margin-inline-start: 2px;
-    -webkit-margin-end: 2px;
-            margin-inline-end: 2px;
-    -webkit-padding-before: 0.35em;
-            padding-block-start: 0.35em;
-    -webkit-padding-start: 0.75em;
-            padding-inline-start: 0.75em;
-    -webkit-padding-end: 0.75em;
-            padding-inline-end: 0.75em;
-    -webkit-padding-after: 0.625em;
-            padding-block-end: 0.625em;
-    border-width: 2px;
-    border-style: groove;
-    border-color: darkgreen;
-    -o-border-image: initial;
-       border-image: initial;
-    margin-bottom: 0.5rem;
-}
-
-legend {
-    padding-left: 5px;
-    padding-right: 5px;
-    width: -webkit-max-content;
-    width: -moz-max-content;
-    width: max-content;
-    text-align: center;
-    margin-bottom: 0px;
-}
-
-.form-group {
-    margin-bottom: 0.5rem;
-}
-
-.label-margin-bottom {
-    margin-bottom: 0.1rem;
-}
-
-.form-control {
-    height: calc(1em + .75rem + 2px);
-}
-
-.tom-align {
-    text-align: center;
-}
-
-.drop-down-box {
-    width: 45%;
-    text-align: center;
-    margin-left: 10px;
-}
-
-.name-align {
-    text-align: center;
-}
-
 /************************************************** Media queries */
 
 
@@ -386,6 +419,7 @@ legend {
     .sub-heading-icon {
         text-align: right;
     }
+
     .org-info-text {
         padding-top: 35px;
         font-size: medium;
@@ -395,7 +429,7 @@ legend {
         text-align: left;
     }
 
-    .submit-changes-btn {
+   .submit-changes-btn {
         width: 40%;
         margin: 3% 30%;
     }
@@ -412,7 +446,7 @@ legend {
     .org-info-text {
         padding-top: 28px;
         font-size: large;
-    }    
+    } 
 }
 
 /* Extra large devices (large desktops, 1200px and up)   */
@@ -426,5 +460,5 @@ legend {
     .org-info-text {
         padding-top: 25px;
         font-size: x-large;
-    }    
+    } 
 }
