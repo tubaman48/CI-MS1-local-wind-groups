@@ -8,7 +8,7 @@
 -   ### Woodwind and brass players searching for a local group to play in.
 -   ### Event organisers seeking to engage / hire the services of a local group.
 
-![Image](/assets/images/lwg-mock-up-as-at-2020-12-21.png)
+![Image](/assets/images/lwg-mock-up-as-at-2020-12-24.png)
 
 ---
 
@@ -117,6 +117,9 @@ The priority focus is on direct contact and social media links.
 > - Fixed navigation bar - Menu headings pointing to each of the 6 pages.
 >
 > - Fixed Footer with Copyright info and Social Media icons
+>
+> Note that a subsequent redesign (instigated as a result of Mentor feedback on user experience received mid-project) resulted in the 4 separate listing pages being merged into the landing page. 
+> I plan to rework the wireframes document in a future revision. 
 
 ---
 
@@ -150,7 +153,7 @@ I've decided on a colour scheme to reflect each of the four listing categories t
 - ### Initial Existing Features
 
 > - Designed with HTML5, CSS3 and Bootstrap.
-> - Site made up 5 fixed pages (the Landing Page plus 4 listing pages - one for each category) plus one modal page for users to propose maintenance to directory entries.
+> - Site made up of 2 fixed pages (the Landing Page which now incorporates the listings plus a separate page for users to propose maintenance to directory entries).
 > - Fixed navigation allows the user to easily navigate, regardless of which page visited.
 > - Fixed footer allows the user quick accessibility to social media links.
 > - Fixed, stacked images for mobile views.
@@ -222,10 +225,10 @@ I've decided on a colour scheme to reflect each of the four listing categories t
 
 ## Testing
 
-> - After initial wireframe design, I checked each navigation item link is working correctly to each Page. I set a _temporary_ contrasting background colour to each page to mark out each section.
+> - After initial wireframe design, I checked each navigation item link is working correctly to each section or page. I set a _temporary_ contrasting background colour to each page to mark out each section.
 > - Tested responsiveness of the wireframe using Dev Tools and confirmed basic structure looks and works well on all mobile decides from 320px, up to desktop size.
 > - Tested **Logo text** in menu bar to ensure it points to the Home page.
-> - Tested **Home, Brass Bands, Concert Bands, Orchestras, Music Services & Changes** links in menu bar to ensure it points to each page and position correctly.
+> - Tested **Home, Brass Bands, Concert Bands, Orchestras, Music Services & Changes** links in menu bar to ensure it points to each section/page and positions correctly.
 > - Tested **Social Media icons** in Footer to ensure they open the correct pages, and in a new tab on the browser.
 > - Tested **Website and Contact Form** links for each organisation on each of the category pages and ensured that they open the correct locations in a new tab on the browser.
 > - Tested **eMail** links for each organisation on each of the category pages and ensured that they pointed to the correct locations, using the mailto: prefix.
@@ -235,21 +238,17 @@ I've decided on a colour scheme to reflect each of the four listing categories t
 > - Tested **Radio buttons** to ensure only _one option can be selected_ and that _at least one option_ is required.
 > - Tested **Drop down menu** to ensure only _one option can be selected_ and that _at least one option_ is required.
 > - Further testing of Responsiveness of all pages using [Google Mobile-Friendly Test](https://search.google.com/test/mobile-friendly)
-> - 1. [Home Page](https://search.google.com/test/mobile-friendly?id=1s9ZkFxYs4kUrg_lKs3geQ)
-> - 2. [Brass Bands Page](https://search.google.com/test/mobile-friendly?id=n78hMGtjaJ_jOe3utvSP8A)
-> - 3. [Concert Bands Page](https://search.google.com/test/mobile-friendly?id=rdleXYe_0w4kUU8qr6dO-Q)
-> - 4. [Orchestras Page](https://search.google.com/test/mobile-friendly?id=OLd1o1qNqOfuvU7Q0ykdMg)
-> - 5. [Music Services Page](https://search.google.com/test/mobile-friendly?id=czAwxrXW3_YXvqX7o1QHrQ)
-> - 6. [Changes (Proposed Maintenance) Page](embedded in above 5 pages as modal page - implies tested OK)
-> - Tested overall site colours on [a11y](https://color.a11y.com/), a Color Contrast Accessibility Validator. Tests for each of the 5 fixed pages came back with excellent results (any reported anomalies were misdiagnosed).
-> - Tested [HTML Validation](https://validator.w3.org/) No errors or warnings to show (after fixing the button in footer section NOT to use embedded h3 and h4 tags).
+> - 1. [Home Page](https://search.google.com/test/mobile-friendly?id=FHhr9lU9MyrTyvRhiWMNIQ)
+> - 2. [Changes (Proposed Maintenance) Page](https://search.google.com/test/mobile-friendly?id=HkEcYFYgBJdyTWrWFW6Dng)
+> - Tested overall site colours on [a11y](https://color.a11y.com/), a Color Contrast Accessibility Validator. Tests for both of the pages came back with excellent results (any reported anomalies were misdiagnosed).
+> - Tested [HTML Validation](https://validator.w3.org/) No errors or warnings to show.
 > - Tested [CSS Validation](https://jigsaw.w3.org/css-validator/)
 > - 1.  Under Fieldset definition "Property xxx doesn't exist" Error on 6 items. Researched this and found that this is a non-issue as the 6 properties are required within the fieldset element to correctly format padding and margins in the modal form.
 > - 2.  Warning 'Imported style sheets are not checked in direct input and file upload modes'. Confident to ignore these after researching and a common answer is that the validator will not validate imported style sheets. See [Stack Overflow](https://stackoverflow.com/questions/25946111/importing-css-is-ending-up-with-an-error).
 > - Tested site URL on [Website Page Test](https://www.webpagetest.org/) which rendered good results. Some images are on the large size in PNG format and already compressed. I chose to maintain the PNG format as the image quality of the site is integral to the UX.
 > - Checked grammar and spelling throughout document.
 > - Ran CSS through [Autoprefixer](https://autoprefixer.github.io/) and copied new CSS code back into style.css doc.
-> - Re-ran CSS Validation and 18 warnings appeared for 'unknown vendor extension'. Confident to ignore these as answered on [Stack Overflow](https://stackoverflow.com/questions/5271955/css-parse-errors-from-a-generated-stylesheet).
+> - Re-ran CSS Validation and 6 warnings appeared for 'unknown vendor extension'. Confident to ignore these as answered on [Stack Overflow](https://stackoverflow.com/questions/5271955/css-parse-errors-from-a-generated-stylesheet).
 > - Ran README text through [Online-Spellcheck](https://www.online-spellcheck.com/) to double-check on grammar and spelling.
 
 ---
@@ -258,8 +257,12 @@ I've decided on a colour scheme to reflect each of the four listing categories t
 
 > - Difficulties encountered with initially enabling my default github.io website from my github account. My GitHub Pages settings in GitHub initially showed website as disabled, so when I tried to go to tubaman48.github.io I got a 404 "Page Not Found" error.
     Resolved (via quick assistance from Slack user ngiap in the CI #lets-deploy-it channel followed by an online engagement from CI Tutor Support) by ensuring Master branch selected along with /root location and clicking Save button, which updated the status of the website as validated and enabled me to access it OK.
-> - Recode of text content in submit button at bottom of footer section required after [HTML Validation](https://validator.w3.org/) objected to me embedding h3 and h4 tags within the button element.
-    This didn't affect the functional behaviour of the button, but by replacing h3 and h4 tags with equivalent div tags I was then able to pass the HTML validation with no errors.
+> - In the original design a recode of text content in submit button at bottom of footer section was required after [HTML Validation](https://validator.w3.org/) objected to me embedding h3 and h4 tags within the button element.
+    This didn't affect the functional behaviour of the button, but by replacing h3 and h4 tags with equivalent div tags I was then able to pass the HTML validation with no errors. Final design made this button redundant.
+> - Inconsistent margin settings were causing visually unattractive white margin space on the right of the page at different sizes and also meant that a horizontal scroll bar was unnecessarily showing. 
+    I used the Inspect Dev tool in Chrome to check where the inconsistency was and found that row class was adding 15px of extra margin left and right. This issue was resolved without any side effects by setting these margins to zero.
+> - Sticky Nav bar would disappear when the header area scrolled out of view. This was resolved by placing the Nav bar right at the top of the Body section above and outside of the Header area.
+> - When navigating to the start of each listing category the Nav bar would obscure the category title. The resolution was to set the top margin to the height of the Nav bar (56px).
 
 ## Code validity
 
@@ -313,7 +316,6 @@ This project has been deployed on GitHub Pages with the following process:
 > ### Code Snippets
 >
 > - [Code Institute](https://codeinstitute.net/) - Inspiration for contact form from 'Love Running' Mini-Project in CSS Module.
-> - [Code Institute](https://codeinstitute.net/) - Inspiration for modal Changes (Proposed Maintenance) form from 'Whiskey Drop' Mini-Project in User Front End Module.
 > - [W3.org](https://www.w3.org/2005/10/howto-favicon) - How to add a Favicon to site.
 
 
