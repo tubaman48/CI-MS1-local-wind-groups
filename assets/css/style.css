@@ -19,6 +19,10 @@ body{
     font-weight: 500;
 }
 
+#main-nav {
+    background-color: #98d4a6;
+    color: #fafafa;
+}
 .container-fluid {
     padding-left: 0px;
     padding-right: 0px;
@@ -114,11 +118,23 @@ header {
 
 /************************************************* Content section */
 
+#brass-bands, #concert-bands, #orchestras, #music-services {
+    padding: 56px 15px 0px 15px;
+}
+
 .content-section {
     padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 56px;
     margin-left: 0px;
     margin-right: 0px;
+}
+
+.row {
+    margin: 0px;
+}
+
+.fa-wrench {
+    padding-top: 15px;
 }
 
 .section-heading {
@@ -137,116 +153,73 @@ header {
     font-size: 30px;
 }
 
-.form-section em {
-    background-color: #98d4a6;
-    color:  #fafafa;
-}
-
-
 .sub-heading-title h2 {
     text-align: center;
 }
 
 .cat-item {
     border-radius: 15px;
-    border: 3px;
+    border: 0px;
     color: #fafafa;
-    width: 95%;
-    height: 150px;
-    max-height: -webkit-fit-content;
-    max-height: -moz-fit-content;
-    max-height: fit-content;
+    width: 100%;
+    height: 100%;
+    max-height: 220px;
     float: left;
-    padding: 15% 5%;
-    text-align: center;
-    margin: 2% 3%;
-    font-size: x-large;
+    padding: 0;
+    margin: 15px 0px 15px 0px;
 }
 
-/* --------------- Detailed List pages subheading formatting */
-/*     (for HTML files bb-list, cb-list, o-list and ms-list) */
+.card {
+    border: 0px;
+    margin-bottom: 15px;
+}
 
-.listing-cat {
-    border-radius: 5px;
+.card-cat-header {
+    text-align: center;
     color: #fafafa;
-    padding-left: 5px;
-    padding-right: 5px;
+}
+
+.card-img-top {
+    width: 120px;
+    height: 120px;
+}
+
+.card-text {
+    height: 72px;
+    text-align: center;
+}
+
+.btn-sm {
+    padding: .15rem .2rem;
+    font-size: .8rem;
 }
 
 /* --------------- Detailed organisation entries - padding and text alignment */
-
-.org-entry {
-    padding-top: 15px;
-}
 
 .org-icon-align {
     text-align: center;
 }
 
-.org-icon-size {
-    max-height: 100px;
-}
+/* --------------- Colours defining the four listing categories */
 
-.org-name p, .org-website, .org-email {
-    margin-top :5px;
-    margin-bottom: 0px;
-    text-align: center;
+.home-bg-color {
+    background-color: #98d4a6;    
 }
-
-/* --------------- Colours and images defining the four listing categories */
 
 .bb-bg-color {
     background-color: #c7a903;
-}
-
-.bb-bg-image {
-    height: 100%;
-    width: 95%;
-    background: url("../images/BB-in-action.jpg") repeat center center;
-}
-
-.bb-bg-image:hover {
-    background: #c7a903 repeat center center;
 }
 
 .cb-bg-color {
     background-color: #6b7279;
 }
 
-.cb-bg-image {
-    height: 100%;
-    width: 95%;
-    background: url("../images/CB-in-action.jpg") repeat center center;
-}
-
-.cb-bg-image:hover {
-    background: #6b7279 repeat center center;
-}
-
 .o-bg-color {
     background-color: #917070;
-}
-.o-bg-image {
-    height: 100%;
-    width: 95%;
-    background: url("../images/Orch-in-action.png") repeat center center;
-}
-
-.o-bg-image:hover {
-    background: #917070 repeat center center;
 }
 
 .ms-bg-color {
     background-color: #008000;
-}
-.ms-bg-image {
-    height: 100%;
-    width: 95%;
-    background: url("../images/MS-in-action.png") repeat center center;
-}
-
-.ms-bg-image:hover {
-    background: #008000 repeat center center;
 }
 
 .changes-bg-color {
@@ -262,6 +235,14 @@ header {
 .form-section {
     background-color: #98d4a6;
     color: #fafafa;
+}
+
+.form-group {
+    margin-bottom: 0.5rem;
+}
+
+.form-control {
+    height: calc(1em + .75rem + 2px);
 }
 
 .form-title {
@@ -305,16 +286,8 @@ legend {
     margin-bottom: 0px;
 }
 
-.form-group {
-    margin-bottom: 0.5rem;
-}
-
 .label-margin-bottom {
     margin-bottom: 0.1rem;
-}
-
-.form-control {
-    height: calc(1em + .75rem + 2px);
 }
 
 .tom-align {
@@ -328,29 +301,12 @@ legend {
 }
 
 .name-align {
-    text-align: center;
-}
-
-/************************************************** Footer section */
-
-footer {
-    background-color: #98d4a6;
-    color: #fafafa;
-    padding-top: 15px;
-    padding-bottom: 5px;
-}
-
-.submit-button-title {
-    font-size: 1.75rem;
-}
-
-.submit-button-subtitle {
-    font-size: 1.5rem;
+    text-align: left;
 }
 
 .submit-changes-btn {
-    width: 70%;
-    margin: 3% 15%;
+    width: 30%;
+    margin: 3% 35%;
     border-radius: 15px;
     background-color: slategrey;
     color: #fafafa;
@@ -361,8 +317,13 @@ footer {
     color: orange;
 }
 
-.submit-changes-text {
-    padding: 10px 20px;
+/************************************************** Footer section */
+
+footer {
+    background-color: #98d4a6;
+    color: #fafafa;
+    padding-top: 15px;
+    padding-bottom: 5px;
 }
 
 /*----------------- Copyright entry */
@@ -388,25 +349,7 @@ footer {
   color: #777777;
 }
 
-/* ---------------- Modal box formatting */
-
-.modal-title {
-    text-align: center;
-}
-
-.modal-content {
-    background-color: #98d4a6;
-}
-
 /************************************************** Media queries */
-
-
-/* Small devices (landscape phones, up to 768px )        */
-@media (max-width: 768px) { 
-    .org-info-text {
-        font-size: small;
-    } 
-}
 
 /* Medium devices (tablets, 768px and up)                */
 @media (min-width:768px) {
@@ -420,18 +363,8 @@ footer {
         text-align: right;
     }
 
-    .org-info-text {
-        padding-top: 35px;
-        font-size: medium;
-    }
-
-    .org-name p, .org-website, .org-email {
-        text-align: left;
-    }
-
-   .submit-changes-btn {
-        width: 40%;
-        margin: 3% 30%;
+    .name-align {
+        text-align: center;
     }
 }
 
@@ -443,10 +376,6 @@ footer {
         padding-right: 150px;
     }
 
-    .org-info-text {
-        padding-top: 28px;
-        font-size: large;
-    } 
 }
 
 /* Extra large devices (large desktops, 1200px and up)   */
@@ -457,8 +386,4 @@ footer {
         padding-right: 200px;
     }
  
-    .org-info-text {
-        padding-top: 25px;
-        font-size: x-large;
-    } 
 }

@@ -13,6 +13,47 @@
     <title>Welcome to Local Wind Groups Directory</title>
 </head>
 <body>
+
+    <!-- NAVIGATION -->
+    <!-- CREDIT - based on Bootstrap navbar template -->  
+    <!-- Design change 24/12/2020 : nav element moved outside and above header element to ensure visibility -->
+    <!--                            of nav bar maintained when scrolling down the page.                     -->       
+    <nav id="main-nav" class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            >
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse">
+                    <a class="nav-link home-bg-color active" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse">
+                    <a class="nav-link bb-bg-color" href="#brass-bands">Brass Bands</a>
+                </li>
+                <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse">
+                    <a class="nav-link cb-bg-color" href="#concert-bands">Concert Bands</a>
+                </li>
+                <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse">
+                    <a class="nav-link o-bg-color" href="#orchestras">Orchestras</a>
+                </li>
+                <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse">
+                    <a class="nav-link ms-bg-color" href="#music-services">Music Services</a>
+                </li>
+                <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse">
+                    <a class="nav-link changes-bg-color" href="changes.html">Changes</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
     <header class="container-fluid">
         <div class="row" id="hero-outer">
             <div id="hero-image"></div> 
@@ -21,45 +62,6 @@
                 <h4 class="site-scope">Organisations available in S.E. London, UK</h4>
             </div>
         </div>
-
-        <!-- NAVIGATION -->
-        <!-- CREDIT - based on Bootstrap navbar template -->        
-        <nav id="main-nav" class="navbar navbar-expand-lg navbar-dark sticky-top">
-            <button
-                class="navbar-toggler"
-                type="button"
-                data-toggle="collapse"
-                data-target="#navbarNav"
-                aria-controls="navbarNav"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-                >
-            <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                    <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse">
-                        <a class="nav-link bb-bg-color" href="bb-list.html">Brass Bands</a>
-                    </li>
-                    <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse">
-                        <a class="nav-link cb-bg-color" href="cb-list.html">Concert Bands</a>
-                    </li>
-                    <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse">
-                        <a class="nav-link o-bg-color" href="o-list.html">Orchestras</a>
-                    </li>
-                    <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse">
-                        <a class="nav-link ms-bg-color" href="ms-list.html">Music Services</a>
-                    </li>
-                    <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse">
-                        <a class="nav-link changes-bg-color" href="changes.html">Changes</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-
     </header>
 
 <!-- LANDING PAGE -->
@@ -99,19 +101,455 @@
                 <h2 class="section-heading">Listings</h2>
             </div>
         </div>
-        <div class="row">
-            <div class="col-6 col-md-3">
-                <a class="cat-item bb-bg-image" href="bb-list.html">Brass Bands</a>
+
+        <!-- ************ Brass Bands Sub-section ************ -->	
+
+        <div class="row bb-bg-color" id="brass-bands">
+            <div class="col-sm-8 col-md-6 col-lg-4">
+                <h3 class="card-cat-header">Brass  Bands
+                    <img src="assets/images/BB-in-action.jpg" alt="Brass Band in action" class="cat-item">
+                </h3>
             </div>
-            <div class="col-6 col-md-3">
-                <a class="cat-item cb-bg-image" href="cb-list.html">Concert Bands</a>
+
+			<div class="col-sm-4 col-md-3 col-lg-2">
+                <div class="card mb-3 box-shadow">
+                    <div class="org-icon-align">
+                        <img src="assets/images/org-logos/CroydonBrass.png" class="card-img-top" alt="Croydon Brass logo"/>
+                    </div>
+                    <div class="card-body">
+                        <h6 class="card-text">Croydon Brass</h6>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <a href="https://www.croydonbrass.org.uk/" target="_blank" class="btn btn-sm btn-outline-secondary">Website</a>
+                                <a href="mailto:jointheband@croydonbrass.org.uk" class="btn btn-sm btn-outline-secondary">eMail</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-6 col-md-3">
-                <a class="cat-item o-bg-image" href="o-list.html">Orchestras</a>
+
+            <div class="col-sm-4 col-md-3 col-lg-2">          
+                <div class="card mb-3 box-shadow">
+                    <div class="org-icon-align">
+                        <img src="assets/images/org-logos/CrystalPalaceBand.png" class="card-img-top" alt="Crystal Palace Band logo"/>
+                    </div>
+                    <div class="card-body">
+                        <h6 class="card-text">Crystal Palace Band</h6>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <a href="https://www.crystalpalaceband.co.uk/" target="_blank" class="btn btn-sm btn-outline-secondary">Website</a>
+                                <a href="mailto:secretary@crystalpalaceband.co.uk" class="btn btn-sm btn-outline-secondary">eMail</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-6 col-md-3">
-                <a class="cat-item ms-bg-image" href="ms-list.html">Music Services</a>
+        
+        </div>
+			
+		<!-- ************ Concert Bands Sub-section ************ -->	
+					
+        <div class="row cb-bg-color" id="concert-bands">
+            <div class="col-sm-8 col-md-6 col-lg-4">
+                <h3 class="card-cat-header">Concert Bands
+                    <img src="assets/images/CB-in-action.jpg" alt="Concert Band in action" class="cat-item">
+                </h3>
             </div>
+
+            <div class="col-sm-4 col-md-3 col-lg-2">          
+                <div class="card mb-3 box-shadow">
+                    <div class="org-icon-align">
+                        <img src="assets/images/org-logos/ASCB.png" class="card-img-top" alt="All Saints Concert Band logo"/>
+                    </div>
+                    <div class="card-body">
+                        <h6 class="card-text">All Saints Concert Band</h6>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <a href="https://allsaintsconcertband.co.uk/" target="_blank" class="btn btn-sm btn-outline-secondary">Website</a>
+                                <a href="mailto:allsaintsconcertband@gmail.com" class="btn btn-sm btn-outline-secondary">eMail</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-4 col-md-3 col-lg-2">          
+                <div class="card mb-3 box-shadow">
+                    <div class="org-icon-align">
+                        <img src="assets/images/org-logos/BeckCB.png" class="card-img-top" alt="Beckenham Concert Band logo"/>
+                    </div>
+                    <div class="card-body">
+                        <h6 class="card-text">Beckenham Concert Band</h6>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <a href="https://www.beckenhamconcertband.com/" target="_blank" class="btn btn-sm btn-outline-secondary">Website</a>
+                                <a href="mailto:membership@beckenhamconcertband.com" class="btn btn-sm btn-outline-secondary">eMail</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-4 col-md-3 col-lg-2">          
+                <div class="card mb-3 box-shadow">
+                    <div class="org-icon-align">
+                        <img src="assets/images/org-logos/BromCB.png" class="card-img-top" alt="Bromley Concert Band logo"/>
+                    </div>
+                    <div class="card-body">
+                        <h6 class="card-text">Bromley Concert Band</h6>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <a href="https://www.bromleyconcertband.com/" target="_blank" class="btn btn-sm btn-outline-secondary">Website</a>
+                                <a href="mailto:bromleyconcertband@gmail.com" class="btn btn-sm btn-outline-secondary">eMail</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>               
+
+            <div class="col-sm-4 col-md-3 col-lg-2">          
+                <div class="card mb-3 box-shadow">
+                    <div class="org-icon-align">
+                        <img src="assets/images/org-logos/GCB.png" class="card-img-top" alt="Greenwich Concert Band logo"/>
+                    </div>
+                    <div class="card-body">
+                        <h6 class="card-text">Greenwich Concert Band</h6>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <a href="http://www.greenwichconcertband.co.uk/" target="_blank" class="btn btn-sm btn-outline-secondary">Website</a>
+                                <a href="mailto:info@greenwichconcertband.co.uk" class="btn btn-sm btn-outline-secondary">eMail</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>       
+            
+            <div class="col-sm-4 col-md-3 col-lg-2">          
+                <div class="card mb-3 box-shadow">
+                    <div class="org-icon-align">
+                        <img src="assets/images/org-logos/LWO.png" class="card-img-top" alt="Lambeth Wind Orchestra logo"/>
+                    </div>
+                    <div class="card-body">
+                        <h6 class="card-text">Lambeth Wind Orchestra</h6>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <a href="http://lambethwindorchestra.org.uk/" target="_blank" class="btn btn-sm btn-outline-secondary">Website</a>
+                                <a href="mailto:lambethwindorchestra@yahoo.co.uk" class="btn btn-sm btn-outline-secondary">eMail</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>       
+            
+            <div class="col-sm-4 col-md-3 col-lg-2">          
+                <div class="card mb-3 box-shadow">
+                    <div class="org-icon-align">
+                        <img src="assets/images/org-logos/LCB.png" class="card-img-top" alt="Lewisham Concert Band logo"/>
+                    </div>
+                    <div class="card-body">
+                        <h6 class="card-text">Lewisham Concert Band</h6>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <a href="https://lewishamconcertband.com/" target="_blank" class="btn btn-sm btn-outline-secondary">Website</a>
+                                <a href="mailto:lewishamconcertband@gmail.com" class="btn btn-sm btn-outline-secondary">eMail</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>       
+            
+            <div class="col-sm-4 col-md-3 col-lg-2">          
+                <div class="card mb-3 box-shadow">
+                    <div class="org-icon-align">
+                        <img src="assets/images/org-logos/slsw.png" class="card-img-top" alt="South London Symphonic Winds logo"/>
+                    </div>
+                    <div class="card-body">
+                        <h6 class="card-text">S. London Symphonic Winds</h6>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <a href="http://slsw.org.uk/" target="_blank" class="btn btn-sm btn-outline-secondary">Website</a>
+                                <a href="mailto:southlondonsymphonicwinds@gmail.com" class="btn btn-sm btn-outline-secondary">eMail</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>       
+            
+            <div class="col-sm-4 col-md-3 col-lg-2">          
+                <div class="card mb-3 box-shadow">
+                    <div class="org-icon-align">
+                        <img src="assets/images/org-logos/XBY.png" class="card-img-top" alt="XBY Concert Band logo"/>
+                    </div>
+                    <div class="card-body">
+                        <h6 class="card-text">XBY Concert Band</h6>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <a href="https://www.xbyconcertband.co.uk/" target="_blank" class="btn btn-sm btn-outline-secondary">Website</a>
+                                <a href="mailto:contact@xbyconcertband.co.uk" class="btn btn-sm btn-outline-secondary">eMail</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>       
+
+        </div>
+        
+        <!-- ************ Orchestras Sub-section ************ -->	
+					
+        <div class="row o-bg-color" id="orchestras">
+            <div class="col-sm-8 col-md-6 col-lg-4">
+                <h3 class="card-cat-header">Orchestras
+                    <img src="assets/images/Orch-in-action.png" alt="Orchestra in action" class="cat-item">
+                </h3>
+            </div>
+
+            <div class="col-sm-4 col-md-3 col-lg-2">          
+                <div class="card mb-3 box-shadow">
+                    <div class="org-icon-align">
+                        <img src="assets/images/org-logos/BrixCO.png" class="card-img-top" alt="Brixton Chamber Orchestra logo"/>
+                    </div>
+                    <div class="card-body">
+                        <h6 class="card-text">Brixton Chamber Orchestra</h6>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <a href="https://www.brixchamber.com/" target="_blank" class="btn btn-sm btn-outline-secondary">Website</a>
+                                <a href="mailto:brixchamber@gmail.com" class="btn btn-sm btn-outline-secondary">eMail</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-sm-4 col-md-3 col-lg-2">          
+                <div class="card mb-3 box-shadow">
+                    <div class="org-icon-align">
+                        <img src="assets/images/org-logos/BSO.png" class="card-img-top" alt="Bromley Symphony Orchestra logo"/>
+                    </div>
+                    <div class="card-body">
+                        <h6 class="card-text">Bromley Symphony Orchestra</h6>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <a href="https://www.bromleysymphony.org/" target="_blank" class="btn btn-sm btn-outline-secondary">Website</a>
+                                <a href="https://www.bromleysymphony.org/contact/" target="_blank" class="btn btn-sm btn-outline-secondary">Contact</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                        
+            <div class="col-sm-4 col-md-3 col-lg-2">          
+                <div class="card mb-3 box-shadow">
+                    <div class="org-icon-align">
+                        <img src="assets/images/org-logos/DSO.png" class="card-img-top" alt="Dartford Symphony Orchestra logo"/>
+                    </div>
+                    <div class="card-body">
+                        <h6 class="card-text">Dartford Symphony Orchestra</h6>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <a href="https://www.dartfordsymphonyorchestra.com/" target="_blank" class="btn btn-sm btn-outline-secondary">Website</a>
+                                <a href="mailto:histevepaul@gmail.com" class="btn btn-sm btn-outline-secondary">eMail</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                        
+            <div class="col-sm-4 col-md-3 col-lg-2">          
+                <div class="card mb-3 box-shadow">
+                    <div class="org-icon-align">
+                        <img src="assets/images/org-logos/LO.png" class="card-img-top" alt="Lambeth Orchestra logo"/>
+                    </div>
+                    <div class="card-body">
+                        <h6 class="card-text">Lambeth Orchestra</h6>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <a href="http://www.lambeth-orchestra.org.uk/" target="_blank" class="btn btn-sm btn-outline-secondary">Website</a>
+                                <a href="mailto:lambethorchestra@gmail.com" class="btn btn-sm btn-outline-secondary">eMail</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                        
+            <div class="col-sm-4 col-md-3 col-lg-2">          
+                <div class="card mb-3 box-shadow">
+                    <div class="org-icon-align">
+                        <img src="assets/images/org-logos/OSO.png" class="card-img-top" alt="Orpington Symphony Orchestra logo"/>
+                    </div>
+                    <div class="card-body">
+                        <h6 class="card-text">Orpington Symphony Orchestra</h6>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <a href="http://orpingtonsymphonyorchestra.co.uk/" target="_blank" class="btn btn-sm btn-outline-secondary">Website</a>
+                                <a href="mailto:info@orpingtonsymphonyorchestra.co.uk/" class="btn btn-sm btn-outline-secondary">eMail</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                        
+            <div class="col-sm-4 col-md-3 col-lg-2">          
+                <div class="card mb-3 box-shadow">
+                    <div class="org-icon-align">
+                        <img src="assets/images/org-logos/SSO.png" class="card-img-top" alt="Sidcup Symphony Orchestra logo"/>
+                    </div>
+                    <div class="card-body">
+                        <h6 class="card-text">Sidcup Symphony Orchestra</h6>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <a href="http://www.sidcupsymphony.org.uk/" target="_blank" class="btn btn-sm btn-outline-secondary">Website</a>
+                                <a href="http://www.sidcupsymphony.org.uk/contact.html" target="_blank" class="btn btn-sm btn-outline-secondary">Contact</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                        
+            <div class="col-sm-4 col-md-3 col-lg-2">          
+                <div class="card mb-3 box-shadow">
+                    <div class="org-icon-align">
+                        <img src="assets/images/org-logos/SELO.png" class="card-img-top" alt="South East London Orchestra logo"/>
+                    </div>
+                    <div class="card-body">
+                        <h6 class="card-text">South East London Orchestra</h6>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <a href="https://southeastlondonorchestra.com/" target="_blank" class="btn btn-sm btn-outline-secondary">Website</a>
+                                <a href="mailto:seorchestra@gmail.com" class="btn btn-sm btn-outline-secondary">eMail</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>        
+        
+        <!-- ************ Music Services Sub-section ************ -->	
+					
+        <div class="row ms-bg-color" id="music-services">
+            <div class="col-sm-8 col-md-6 col-lg-4">
+                <h3 class="card-cat-header">Music Services
+                    <img src="assets/images/MS-in-action.png" alt="Music Service in action" class="cat-item">
+                </h3>
+            </div>
+
+            <div class="col-sm-4 col-md-3 col-lg-2">          
+                <div class="card mb-3 box-shadow">
+                    <div class="org-icon-align">
+                        <img src="assets/images/org-logos/MS-BCMS.png" class="card-img-top" alt="Bexley (Bird College) logo"/>
+                    </div>
+                    <div class="card-body">
+                        <h6 class="card-text">Bexley (Bird College)</h6>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <a href="https://bird-college.com/music-service/" target="_blank" class="btn btn-sm btn-outline-secondary">Website</a>
+                                <a href="mailto:musicserviceadmin@birdcollege.co.uk" class="btn btn-sm btn-outline-secondary">eMail</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-4 col-md-3 col-lg-2">          
+                <div class="card mb-3 box-shadow">
+                    <div class="org-icon-align">
+                        <img src="assets/images/org-logos/MS-BYMT.png" class="card-img-top" alt="Bromley (BYMT) logo"/>
+                    </div>
+                    <div class="card-body">
+                        <h6 class="card-text">Bromley (BYMT)</h6>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <a href="https://www.bymt.co.uk/" target="_blank" class="btn btn-sm btn-outline-secondary">Website</a>
+                                <a href="mailto:contact@bymt.co.uk" class="btn btn-sm btn-outline-secondary">eMail</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-4 col-md-3 col-lg-2">          
+                <div class="card mb-3 box-shadow">
+                    <div class="org-icon-align">
+                        <img src="assets/images/org-logos/MS-CMA.png" class="card-img-top" alt="Croydon Music and Arts logo"/>
+                    </div>
+                    <div class="card-body">
+                        <h6 class="card-text">Croydon Music and Arts</h6>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <a href="https://www.croydonmusicandarts.co.uk/" target="_blank" class="btn btn-sm btn-outline-secondary">Website</a>
+                                <a href="mailto:musicandarts.education@croydon.gov.uk" class="btn btn-sm btn-outline-secondary">eMail</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-4 col-md-3 col-lg-2">          
+                <div class="card mb-3 box-shadow">
+                    <div class="org-icon-align">
+                        <img src="assets/images/org-logos/MS-GMS.png" class="card-img-top" alt="Greenwich Music School logo"/>
+                    </div>
+                    <div class="card-body">
+                        <h6 class="card-text">Greenwich Music School</h6>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <a href="https://greenwichmusicschool.org.uk/" target="_blank" class="btn btn-sm btn-outline-secondary">Website</a>
+                                <a href="mailto:info@greenwichmusicschool.org.uk" class="btn btn-sm btn-outline-secondary">eMail</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-4 col-md-3 col-lg-2">          
+                <div class="card mb-3 box-shadow">
+                    <div class="org-icon-align">
+                        <img src="assets/images/org-logos/MS-LambethMS.png" class="card-img-top" alt="Lambeth Music Service logo"/>
+                    </div>
+                    <div class="card-body">
+                        <h6 class="card-text">Lambeth Music Service</h6>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <a href="https://www.lambethmusic.co.uk/" target="_blank" class="btn btn-sm btn-outline-secondary">Website</a>
+                                <a href="mailto:info@lambethmusic.co.uk" class="btn btn-sm btn-outline-secondary">eMail</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-4 col-md-3 col-lg-2">          
+                <div class="card mb-3 box-shadow">
+                    <div class="org-icon-align">
+                        <img src="assets/images/org-logos/MS-LewishamMS.png" class="card-img-top" alt="Lewisham Music Service logo"/>
+                    </div>
+                    <div class="card-body">
+                        <h6 class="card-text">Lewisham Music Service</h6>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <a href="https://www.lewishammusic.org/" target="_blank" class="btn btn-sm btn-outline-secondary">Website</a>
+                                <a href="mailto:info@lewishammusic.org" class="btn btn-sm btn-outline-secondary">eMail</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 col-md-3 col-lg-2">          
+                <div class="card mb-3 box-shadow">
+                    <div class="org-icon-align">
+                        <img src="assets/images/org-logos/MS-SouthwarkMS.png" class="card-img-top" alt="Southwark Music Service logo"/>
+                    </div>
+                    <div class="card-body">
+                        <h6 class="card-text">Southwark Music Service</h6>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <a href="https://www.southwarkmusicservice.org.uk/" target="_blank" class="btn btn-sm btn-outline-secondary">Website</a>
+                                <a href="mailto:info@southwarkmusicservice.org.uk" class="btn btn-sm btn-outline-secondary">eMail</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </section>
 
@@ -141,7 +579,6 @@
     </footer> 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/js/bootstrap.min.js"></script>
 </body>
 </html>
