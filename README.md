@@ -191,10 +191,11 @@ I've decided on a colour scheme to reflect each of the four listing categories t
 
 ### 4. Other
 
-> [Autoprefixer](https://autoprefixer.github.io/) Parses CSS and adds vendor prefixes.
-> [Google Mobile-Friendly Test](https://search.google.com/test/mobile-friendly) Mobile-friendly check on site.
-> [Website Page Test](https://www.webpagetest.org/) Runs a website speed test from multiple locations around the globe using real browsers (IE and Chrome) and at real consumer connection speeds. 
-> [Online-Spellcheck](https://www.online-spellcheck.com/) Online spelling and grammar checks.
+> - [Autoprefixer](https://autoprefixer.github.io/) Parses CSS and adds vendor prefixes.
+> - [Google Mobile-Friendly Test](https://search.google.com/test/mobile-friendly) Mobile-friendly check on site.
+> - [Website Page Test](https://www.webpagetest.org/) Runs a website speed test from multiple locations around the globe using real browsers (IE and Chrome) and at real consumer connection speeds.
+> - [Responsinator](http://www.responsinator.com/) Checks rendering across a variety of device types in landscape and portrait modes.  
+> - [Online-Spellcheck](https://www.online-spellcheck.com/) Online spelling and grammar checks.
 
 ### 5. IDE Extensions used in GitPod
 
@@ -246,6 +247,8 @@ I've decided on a colour scheme to reflect each of the four listing categories t
 > - 1.  Under Fieldset definition "Property xxx doesn't exist" Error on 6 items. Researched this and found that this is a non-issue as the 6 properties are required within the fieldset element to correctly format padding and margins in the modal form.
 > - 2.  Warning 'Imported style sheets are not checked in direct input and file upload modes'. Confident to ignore these after researching and a common answer is that the validator will not validate imported style sheets. See [Stack Overflow](https://stackoverflow.com/questions/25946111/importing-css-is-ending-up-with-an-error).
 > - Tested site URL on [Website Page Test](https://www.webpagetest.org/) which rendered good results. Some images are on the large size in PNG format and already compressed. I chose to maintain the PNG format as the image quality of the site is integral to the UX.
+> - Tested site URL on [Responsinator](http://www.responsinator.com/) which highlighted a cropping of the placeholder text on the form for the Contact eMail and Group icon fields when displayed on mobile phones in portrait mode.
+>   Fixed by rewording placeholder text to more concise description.
 > - Checked grammar and spelling throughout document.
 > - Ran CSS through [Autoprefixer](https://autoprefixer.github.io/) and copied new CSS code back into style.css doc.
 > - Re-ran CSS Validation and 6 warnings appeared for 'unknown vendor extension'. Confident to ignore these as answered on [Stack Overflow](https://stackoverflow.com/questions/5271955/css-parse-errors-from-a-generated-stylesheet).
